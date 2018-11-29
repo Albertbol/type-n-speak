@@ -41,11 +41,11 @@ const getVoices = () => {
 if (isFirefox) {
     getVoices();
 }
-if (isChrome) {
+else if (isChrome) {
     if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = getVoices;
     }
-}
+} else() {getVoices();}
 
 // Speak
 const speak = () => {
