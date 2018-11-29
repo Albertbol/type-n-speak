@@ -34,7 +34,7 @@ const getVoices = () => {
 };
 
 
-// getVoices();
+getVoices();
 if (synth.onvoiceschanged !== undefined) {
   synth.onvoiceschanged = getVoices;
 }
