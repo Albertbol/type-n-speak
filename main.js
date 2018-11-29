@@ -45,7 +45,7 @@ else if (isChrome) {
     if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = getVoices;
     }
-} else() {getVoices();}
+} else{getVoices();}
 
 // Speak
 const speak = () => {
